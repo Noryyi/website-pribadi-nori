@@ -1,0 +1,27 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    background-image:
+      url('https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-b5c0-61f7-8857-22c5147d56e6/raw?se=2025-05-18T03%3A31%3A22Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-18T00%3A30%3A46Z&ske=2025-05-19T00%3A30%3A46Z&sks=b&skv=2024-08-04&sig=r03a54hkZsKe%2ByOKIzhqwGPhBFFFCbs3w7SoLLN7erU%3D'), /* ← Foto yang kamu tambahkan */
+      url('nork1.png'), /* Logo di tengah */
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size:
+      cover,
+      200px auto,
+      40px 40px,
+      40px 40px;
+    background-position:
+      center center,
+      center center,
+      top left,
+      top left;
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      repeat,
+      repeat;
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+  

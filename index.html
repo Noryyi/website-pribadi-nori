@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NORK1 PRIBADI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">  <a href="about.html">About</a>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      background-image:
+        url('https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-b5c0-61f7-8857-22c5147d56e6/raw?se=2025-05-18T03%3A31%3A22Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-18T00%3A30%3A46Z&ske=2025-05-19T00%3A30%3A46Z&sks=b&skv=2024-08-04&sig=r03a54hkZsKe%2ByOKIzhqwGPhBFFFCbs3w7SoLLN7erU%3D'),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size:
+        200px auto,
+        40px 40px,
+        40px 40px;
+      background-position:
+        center center,
+        top left,
+        top left;
+      background-repeat:
+        no-repeat,
+        repeat,
+        repeat;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffee;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 40px 40px 40px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .project {
+      margin-top: 40px;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 16px 20px;
+      border-radius: 50%;
+      background-color: #edf0f0;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 255, 238, 0.4);
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .floating-button.active {
+      width: 60px;
+      height: 160px;
+      border-radius: 30px;
+      font-size: 0;
+    }
+
+    .floating-button:active {
+      animation: pop-up 0.4s ease;
+    }
+
+    @keyframes pop-up {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NORK1</div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Hello, I'm NORK1</h1>
+    <p>Creative designer & digital explorer focused on clean interfaces and meaningful experiences.</p>
+  </section>
+
+  <img src="nork1.png" class="img-fluid" alt="nork1">
+
+  <footer>
+    &copy; 2025 NORK1. All rights reserved.
+  </footer>
+
+  <button class="floating-button" id="floatingBtn">CONTACT ME</button>
+
+  <script>
+    const floatingBtn = document.getElementById('floatingBtn');
+    floatingBtn.addEventListener('click', () => {
+      floatingBtn.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
